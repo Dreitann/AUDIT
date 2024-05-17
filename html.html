@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grooming and Dog Salon</title>
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Internal CSS styles -->
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            width: 150px;
+            margin-left: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Owl Carousel styles */
+        .owl-carousel {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .owl-carousel .item {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .owl-carousel .item h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .owl-carousel .item p {
+            text-align: justify;
+        }
+
+        /* Section styles */
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #333;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .news-item, .work-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img, .work-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .news-item h3, .work-item h3 {
+            margin: 10px 0 5px;
+        }
+
+        /* Grid layout for photos */
+        .photos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .photos-grid .work-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .service-img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Table styles */
+        table {
+            border-collapse: collapse;
+            background: white;
+            color: black;
+            margin: auto;
+        }
+
+        th, td {
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logo.jpg" alt="Company Logo">
+        <h1>Grooming and Dog Salon</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Photos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="grooming.jpg" alt="Grooming" class="service-img">
+                <h3>Grooming</h3>
+                <p>We offer professional grooming services to keep your pets looking their best.</p>
+            </div>
+            <div class="item">
+                <img src="bathing.jpg" alt="Bathing" class="service-img">
+                <h3>Bathing</h3>
+                <p>Our bathing services help maintain your pet's hygiene and cleanliness.</p>
+            </div>
+            <div class="item">
+                <img src="nail.jpg" alt="Nail Trimming" class="service-img">
+                <h3>Nail Trimming</h3>
+                <p>We provide safe and gentle nail trimming to keep your pet's nails healthy.</p>
+            </div>
+            <div class="item">
+                <img src="ear.jpg" alt="Ear Cleaning" class="service-img">
+                <h3>Ear Cleaning</h3>
+                <p>Our ear cleaning service ensures your pet's ears are free from dirt and debris.</p>
+            </div>
+            <div class="item">
+                <img src="brush.jpg" alt="Teeth Brushing" class="service-img">
+                <h3>Teeth Brushing</h3>
+                <p>We offer teeth brushing to maintain your pet's dental health and fresh breath.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+        <h2>News</h2>
+        <div class="news-item">
+            <img src="news1.jpg" alt="News 1">
+            <h3>Exciting New Services</h3>
+            <p>We are thrilled to announce the addition of new services to our lineup. Stay tuned for more updates!</p>
+        </div>
+    </section>
+
+    <!-- Photos of Our Works Section -->
+    <section id="photos">
+        <h2>Photos of Our Works</h2>
+        <div class="photos-grid">
+            <div class="work-item">
+                <img src="work1.jpg" alt="Work 1">
+            </div>
+            <div class="work-item">
+                <img src="work2.jpg" alt="Work 2">
+            </div>
+            <div class="work-item">
+                <img src="work3.jpg" alt="Work 3">
+            </div>
+            <div class="work-item">
+                <img src="work4.jpg" alt="Work 4">
+            </div>
+            <div class="work-item">
+                <img src="work5.jpg" alt="Work 5">
+            </div>
+            <div class="work-item">
+                <img src="work6.jpg" alt="Work 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of dedicated professionals passionate about providing the highest quality care for your beloved pets. With years of experience and expertise, we ensure your pets receive the love and attention they deserve.</p>
+    </section>
+
+    <!-- Book an Appointment Section -->
+    <section id="book-appointment">
+        <h2>Book an Appointment</h2>
+        <table bgcolor="lightgrey" align="center" cellspacing="21" cellpadding="21">
+            <caption>January 2021</caption>
+            <thead>
+                <tr>
+                    <th style="color: black; background: lightgrey;">Sun</th>
+                    <th style="color: black; background: lightgrey;">Mon</th>
+                    <th style="color: black; background: lightgrey;">Tue</th>
+                    <th style="color: black; background: lightgrey;">Wed</th>
+                    <th style="color: black; background: lightgrey;">Thu</th>
+                    <th style="color: black; background: lightgrey;">Fri</th>
+                    <th style="color: black; background: lightgrey;">Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us at info@example.com or call us at 123-456-7890</p>
+        <p>&copy; 2024 Grooming and Dog Salon. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 3
+            });
+        });
+    </script>
+</body>
+</html>
